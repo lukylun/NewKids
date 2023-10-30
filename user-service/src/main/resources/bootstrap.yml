@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: https://j9c205.p.ssafy.io/config
+      name: user-service
+  profiles:
+    active: default

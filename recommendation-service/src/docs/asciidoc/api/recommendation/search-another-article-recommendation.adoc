@@ -1,0 +1,11 @@
+[[search-another-article-recommendation]]
+=== 다른 뉴스 기사 추천 조회
+
+==== HTTP Request
+include::{snippets}/search-another-article-recommendation/http-request.adoc[]
+include::{snippets}/search-another-article-recommendation/request-parameters.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-another-article-recommendation/http-response.adoc[]
+include::{snippets}/search-another-article-recommendation/response-fields.adoc[]

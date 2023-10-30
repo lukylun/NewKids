@@ -1,0 +1,10 @@
+[[start-quiz]]
+=== 퀴즈 시작 등록
+
+==== HTTP Request
+include::{snippets}/start-quiz/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/start-quiz/http-response.adoc[]
+include::{snippets}/start-quiz/response-fields.adoc[]

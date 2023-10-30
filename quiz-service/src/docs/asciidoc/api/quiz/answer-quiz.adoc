@@ -1,0 +1,11 @@
+[[answer-quiz]]
+=== 퀴즈 정답 체크
+
+==== HTTP Request
+include::{snippets}/answer-quiz/http-request.adoc[]
+include::{snippets}/answer-quiz/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/answer-quiz/http-response.adoc[]
+include::{snippets}/answer-quiz/response-fields.adoc[]

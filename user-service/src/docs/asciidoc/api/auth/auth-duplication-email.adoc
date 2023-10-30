@@ -1,0 +1,11 @@
+[[auth-duplication-email]]
+=== 이메일 중복 검증
+
+==== HTTP Request
+include::{snippets}/auth-duplication-email/http-request.adoc[]
+include::{snippets}/auth-duplication-email/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/auth-duplication-email/http-response.adoc[]
+include::{snippets}/auth-duplication-email/response-fields.adoc[]

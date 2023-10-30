@@ -1,0 +1,10 @@
+[[search-vocabulary-check]]
+=== 단어장 체크 갯수 조회
+
+==== HTTP Request
+include::{snippets}/search-vocabulary-check/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-vocabulary-check/http-response.adoc[]
+include::{snippets}/search-vocabulary-check/response-fields.adoc[]

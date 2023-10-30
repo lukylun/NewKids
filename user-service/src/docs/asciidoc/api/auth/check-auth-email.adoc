@@ -1,0 +1,11 @@
+[[check-auth-email]]
+=== 인증 메일 확인
+
+==== HTTP Request
+include::{snippets}/check-auth-email/http-request.adoc[]
+include::{snippets}/check-auth-email/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/check-auth-email/http-response.adoc[]
+include::{snippets}/check-auth-email/response-fields.adoc[]

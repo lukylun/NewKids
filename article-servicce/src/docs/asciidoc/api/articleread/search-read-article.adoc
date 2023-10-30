@@ -1,0 +1,11 @@
+[[search-read-article]]
+=== 읽은 뉴스 기사 조회
+
+==== HTTP Request
+include::{snippets}/search-read-article/http-request.adoc[]
+include::{snippets}/search-read-article/request-parameters.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-read-article/http-response.adoc[]
+include::{snippets}/search-read-article/response-fields.adoc[]

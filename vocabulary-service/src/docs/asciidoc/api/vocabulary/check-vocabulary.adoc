@@ -1,0 +1,10 @@
+[[check-vocabulary]]
+=== 단어장 체크
+
+==== HTTP Request
+include::{snippets}/check-vocabulary/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/check-vocabulary/http-response.adoc[]
+include::{snippets}/check-vocabulary/response-fields.adoc[]

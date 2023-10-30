@@ -1,0 +1,11 @@
+[[search-openapi]]
+=== Open API 단어 조회
+
+==== HTTP Request
+include::{snippets}/search-openapi/http-request.adoc[]
+include::{snippets}/search-openapi/request-parameters.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-openapi/http-response.adoc[]
+include::{snippets}/search-openapi/response-fields.adoc[]

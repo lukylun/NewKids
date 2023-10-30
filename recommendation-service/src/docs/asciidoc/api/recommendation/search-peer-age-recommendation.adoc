@@ -1,0 +1,10 @@
+[[search-peer-age-recommendation]]
+=== 또래 뉴스 기사 추천 조회
+
+==== HTTP Request
+include::{snippets}/search-peer-age-recommendation/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-peer-age-recommendation/http-response.adoc[]
+include::{snippets}/search-peer-age-recommendation/response-fields.adoc[]

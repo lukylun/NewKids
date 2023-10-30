@@ -1,0 +1,11 @@
+[[increse-exp]]
+=== 경험치 증가
+
+==== HTTP Request
+include::{snippets}/increase-exp/http-request.adoc[]
+include::{snippets}/increase-exp/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/increase-exp/http-response.adoc[]
+include::{snippets}/increase-exp/response-fields.adoc[]

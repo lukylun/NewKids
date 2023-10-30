@@ -1,0 +1,11 @@
+[[create-article-keyword]]
+=== 뉴스 기사 키워드 등록
+
+==== HTTP Request
+include::{snippets}/create-article-keyword/http-request.adoc[]
+include::{snippets}/create-article-keyword/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/create-article-keyword/http-response.adoc[]
+include::{snippets}/create-article-keyword/response-fields.adoc[]

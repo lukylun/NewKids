@@ -1,0 +1,11 @@
+[[create-read-article]]
+=== 읽은 뉴스 기사 등록
+
+==== HTTP Request
+include::{snippets}/create-read-article/http-request.adoc[]
+include::{snippets}/create-read-article/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/create-read-article/http-response.adoc[]
+include::{snippets}/create-read-article/response-fields.adoc[]

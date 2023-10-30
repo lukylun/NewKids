@@ -1,0 +1,11 @@
+[[search-vocabulary]]
+=== 단어장 조회
+
+==== HTTP Request
+include::{snippets}/search-vocabulary/http-request.adoc[]
+include::{snippets}/search-vocabulary/request-parameters.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-vocabulary/http-response.adoc[]
+include::{snippets}/search-vocabulary/response-fields.adoc[]

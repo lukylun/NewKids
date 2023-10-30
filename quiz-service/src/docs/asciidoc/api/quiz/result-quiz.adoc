@@ -1,0 +1,10 @@
+[[result-quiz]]
+=== 퀴즈 결과 호출
+
+==== HTTP Request
+include::{snippets}/result-quiz/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/result-quiz/http-response.adoc[]
+include::{snippets}/result-quiz/response-fields.adoc[]

@@ -1,0 +1,10 @@
+[[search-my-keyword]]
+=== 나의 키워드 Top 5 조회
+
+==== HTTP Request
+include::{snippets}/search-my-keyword/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-my-keyword/http-response.adoc[]
+include::{snippets}/search-my-keyword/response-fields.adoc[]

@@ -1,0 +1,5 @@
+encrypt:
+  key-store:
+    location: file://${user.home}/app/newkids/keystore/apiEncryptionKey.jks
+    password: ssafyc205
+    alias: apiEncryptionKey

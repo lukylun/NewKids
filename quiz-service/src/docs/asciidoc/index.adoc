@@ -1,0 +1,29 @@
+ifndef::snippets[]
+:snippets: ../../build/generated-snippets
+endif::[]
+= New Kids(quiz-service) REST API 문서
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+include::overview.adoc[]
+
+[[Quiz-API]]
+== Quiz API
+
+include::api/quiz/start-quiz.adoc[]
+include::api/quiz/next-quiz.adoc[]
+include::api/quiz/answer-quiz.adoc[]
+include::api/quiz/result-quiz.adoc[]
+
+[[Weekly-Quiz-API]]
+== Weekly Quiz API
+
+include::api/weekly/start-weekly-quiz.adoc[]
+include::api/weekly/next-weekly-quiz.adoc[]
+include::api/weekly/answer-weekly-quiz.adoc[]
+include::api/weekly/result-weekly-quiz.adoc[]
+

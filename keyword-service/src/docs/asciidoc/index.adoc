@@ -1,0 +1,33 @@
+ifndef::snippets[]
+:snippets: ../../build/generated-snippets
+endif::[]
+= New Kids(keyword-service) REST API 문서
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+include::overview.adoc[]
+
+[[Keyword-API]]
+== Keyword API
+
+include::api/keyword/create-keyword.adoc[]
+
+[[Keyword-Article-API]]
+== Keyword Article API
+
+include::api/keywordarticle/create-article-keyword.adoc[]
+include::api/keywordarticle/search-article-keyword.adoc[]
+
+[[Keyword-Popular-API]]
+== Keyword Popular API
+
+include::api/popularkeyword/search-popular-keyword.adoc[]
+
+[[Keyword-Search-API]]
+== Keyword Search API
+
+include::api/keywordsearch/search-my-keyword.adoc[]

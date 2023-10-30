@@ -1,0 +1,10 @@
+[[search-cloud-keyword]]
+=== 클라우드 키워드 조회
+
+==== HTTP Request
+include::{snippets}/search-cloud-keyword/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-cloud-keyword/http-response.adoc[]
+include::{snippets}/search-cloud-keyword/response-fields.adoc[]

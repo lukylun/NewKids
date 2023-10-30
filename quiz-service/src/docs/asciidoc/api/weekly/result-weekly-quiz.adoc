@@ -1,0 +1,10 @@
+[[result-weekly-quiz]]
+=== 주간 키워드 퀴즈 결과 호출
+
+==== HTTP Request
+include::{snippets}/result-weekly-quiz/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/result-weekly-quiz/http-response.adoc[]
+include::{snippets}/result-weekly-quiz/response-fields.adoc[]

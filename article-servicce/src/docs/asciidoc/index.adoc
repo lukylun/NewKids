@@ -1,0 +1,24 @@
+ifndef::snippets[]
+:snippets: ../../build/generated-snippets
+endif::[]
+= New Kids(article-service) REST API 문서
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+include::overview.adoc[]
+
+[[Article-API]]
+== Article API
+
+include::api/article/search-article.adoc[]
+include::api/article/search-detail-article.adoc[]
+
+[[Article-Read-API]]
+== Article Read API
+
+include::api/articleread/create-read-article.adoc[]
+include::api/articleread/search-read-article.adoc[]

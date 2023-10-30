@@ -1,0 +1,10 @@
+[[search-live-keyword]]
+=== 실시간 키워드 조회
+
+==== HTTP Request
+include::{snippets}/search-live-keyword/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-live-keyword/http-response.adoc[]
+include::{snippets}/search-live-keyword/response-fields.adoc[]

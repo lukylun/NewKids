@@ -1,0 +1,10 @@
+[[next-weekly-quiz]]
+=== 주간 키워드 퀴즈 다음 단어 호출
+
+==== HTTP Request
+include::{snippets}/next-weekly-quiz/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/next-weekly-quiz/http-response.adoc[]
+include::{snippets}/next-weekly-quiz/response-fields.adoc[]

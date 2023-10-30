@@ -1,0 +1,52 @@
+# server port
+server:
+  port: 0
+
+# logging
+logging:
+  level:
+    com.ssafy.quizservice: debug
+
+# MSA setting
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://j9c205.p.ssafy.io:8761/eureka
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.instance_id:${random.value}}
+
+# spring setting
+spring:
+  application:
+    name: quiz-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  # h2 setting
+  h2:
+    console:
+      enabled: true
+  # jpa setting
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+        format_sql: true
+    open-in-view: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  main:
+    allow-bean-definition-overriding: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, info, metrics, prometheus, busrefresh

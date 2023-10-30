@@ -1,0 +1,39 @@
+ifndef::snippets[]
+:snippets: ../../build/generated-snippets
+endif::[]
+= New Kids(user-service) REST API 문서
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+include::overview.adoc[]
+
+[[Auth-API]]
+== Auth API
+
+include::api/auth/auth-duplication-email.adoc[]
+include::api/auth/auth-duplication-nickname.adoc[]
+include::api/auth/auth-email.adoc[]
+include::api/auth/check-auth-email.adoc[]
+
+[[Account-API]]
+== Account API
+
+include::api/account/login-account.adoc[]
+include::api/account/search-account.adoc[]
+
+[[Member-API]]
+== Member API
+
+include::api/member/create-account.adoc[]
+include::api/member/edit-password.adoc[]
+include::api/member/edit-nickname.adoc[]
+include::api/member/remove-member.adoc[]
+
+[[Client-API]]
+== Client API
+
+include::api/client/increase-exp.adoc[]

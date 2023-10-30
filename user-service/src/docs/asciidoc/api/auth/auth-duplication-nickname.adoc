@@ -1,0 +1,11 @@
+[[auth-duplication-nickname]]
+=== 닉네임 중복 검증
+
+==== HTTP Request
+include::{snippets}/auth-duplication-nickname/http-request.adoc[]
+include::{snippets}/auth-duplication-nickname/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/auth-duplication-nickname/http-response.adoc[]
+include::{snippets}/auth-duplication-nickname/response-fields.adoc[]

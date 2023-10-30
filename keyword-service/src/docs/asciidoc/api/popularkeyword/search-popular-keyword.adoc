@@ -1,0 +1,10 @@
+[[search-popular-keyword]]
+=== 인기 키워드 Top 10 조회
+
+==== HTTP Request
+include::{snippets}/search-popular-keyword/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-popular-keyword/http-response.adoc[]
+include::{snippets}/search-popular-keyword/response-fields.adoc[]

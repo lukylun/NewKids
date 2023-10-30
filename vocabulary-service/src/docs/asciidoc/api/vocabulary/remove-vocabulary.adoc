@@ -1,0 +1,10 @@
+[[remove-vocabulary]]
+=== 단어장 삭제
+
+==== HTTP Request
+include::{snippets}/remove-vocabulary/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/remove-vocabulary/http-response.adoc[]
+include::{snippets}/remove-vocabulary/response-fields.adoc[]

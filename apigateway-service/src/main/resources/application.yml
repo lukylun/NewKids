@@ -1,0 +1,206 @@
+server:
+  port: 8000
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+
+spring:
+  application:
+    name: apigateway-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    gateway:
+      routes:
+        # USER SERVICE
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/login
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/join
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/auth/**
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/actuator/**
+            - Method=GET,POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/docs/index
+            - Method=GET
+          filters:
+            - RemoveRequestHeader=Cookie
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/api/**
+            - Method=GET, POST, PATCH, DELETE
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+            - AuthorizationHeaderFilter
+        # VOCABULARY SERVICE
+        - id: vocabulary-service
+          uri: lb://VOCABULARY-SERVICE
+          predicates:
+            - Path=/vocabulary-service/api/**
+            - Method=GET, POST, PATCH, DELETE
+        - id: vocabulary-service
+          uri: lb://VOCABULARY-SERVICE
+          predicates:
+            - Path=/vocabulary-service/actuator/**
+            - Method=GET,POST
+          filters:
+            - RewritePath=/vocabulary-service/(?<segment>.*), /$\{segment}
+        - id: vocabulary-service
+          uri: lb://VOCABULARY-SERVICE
+          predicates:
+            - Path=/vocabulary-service/docs/index
+            - Method=GET
+        # ARTICLE SERVICE
+        - id: article-service
+          uri: lb://ARTICLE-SERVICE
+          predicates:
+            - Path=/article-service/api/**
+            - Method=GET, POST, PATCH, DELETE
+        - id: article-service
+          uri: lb://ARTICLE-SERVICE
+          predicates:
+            - Path=/article-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RewritePath=/article-service/(?<segment>.*), /$\{segment}
+        - id: article-service
+          uri: lb://ARTICLE-SERVICE
+          predicates:
+            - Path=/article-service/docs/index
+            - Method=GET
+        # KEYWORD SERVICE
+        - id: keyword-service
+          uri: lb://KEYWORD-SERVICE
+          predicates:
+            - Path=/keyword-service/api/**
+            - Method=GET, POST, PATCH, DELETE
+        - id: keyword-service
+          uri: lb://KEYWORD-SERVICE
+          predicates:
+            - Path=/keyword-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RewritePath=/keyword-service/(?<segment>.*), /$\{segment}
+        - id: keyword-service
+          uri: lb://KEYWORD-SERVICE
+          predicates:
+            - Path=/keyword-service/docs/index
+            - Method=GET
+        # QUIZ SERVICE
+        - id: quiz-service
+          uri: lb://QUIZ-SERVICE
+          predicates:
+            - Path=/quiz-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RewritePath=/quiz-service/(?<segment>.*), /$\{segment}
+        - id: quiz-service
+          uri: lb://QUIZ-SERVICE
+          predicates:
+            - Path=/quiz-service/api/**
+            - Method=GET, POST, PATCH, DELETE
+        - id: quiz-service
+          uri: lb://QUIZ-SERVICE
+          predicates:
+            - Path=/quiz-service/docs/index
+            - Method=GET
+        # RECOMMENDATION SERVICE
+        - id: recommendation-service
+          uri: lb://RECOMMENDATION-SERVICE
+          predicates:
+            - Path=/recommendation-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RewritePath=/recommendation-service/(?<segment>.*), /$\{segment}
+        - id: recommendation-service
+          uri: lb://RECOMMENDATION-SERVICE
+          predicates:
+            - Path=/recommendation-service/api/**
+            - Method=GET
+        - id: recommendation-service
+          uri: lb://RECOMMENDATION-SERVICE
+          predicates:
+            - Path=/recommendation-service/docs/index
+            - Method=GET
+        # OPENAPI SERVICE
+        - id: openapi-service
+          uri: lb://OPENAPI-SERVICE
+          predicates:
+            - Path=/openapi-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RewritePath=/openapi-service/(?<segment>.*), /$\{segment}
+        - id: openapi-service
+          uri: lb://OPENAPI-SERVICE
+          predicates:
+            - Path=/openapi-service/api/**
+            - Method=GET
+        - id: openapi-service
+          uri: lb://OPENAPI-SERVICE
+          predicates:
+            - Path=/openapi-service/docs/index
+            - Method=GET
+        # ANALYSIS SERVICE
+        - id: analysis-service
+          uri: lb://ANALYSIS-SERVICE
+          predicates:
+            - Path=/analysis-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RewritePath=/analysis-service/(?<segment>.*), /$\{segment}
+        - id: analysis-service
+          uri: lb://ANALYSIS-SERVICE
+          predicates:
+            - Path=/analysis-service/api/**
+            - Method=GET, POST
+        - id: analysis-service
+          uri: lb://ANALYSIS-SERVICE
+          predicates:
+            - Path=/analysis-service/docs/index
+            - Method=GET
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, info, metrics, prometheus, busrefresh
+

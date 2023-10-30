@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: https://j9c205.p.ssafy.io/config
+      name: quiz-service
+  profiles:
+    active: default

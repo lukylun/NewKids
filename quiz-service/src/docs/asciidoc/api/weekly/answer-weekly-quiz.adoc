@@ -1,0 +1,11 @@
+[[answer-weekly-quiz]]
+=== 주간 키워드 퀴즈 정답 체크
+
+==== HTTP Request
+include::{snippets}/answer-weekly-quiz/http-request.adoc[]
+include::{snippets}/answer-weekly-quiz/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/answer-weekly-quiz/http-response.adoc[]
+include::{snippets}/answer-weekly-quiz/response-fields.adoc[]

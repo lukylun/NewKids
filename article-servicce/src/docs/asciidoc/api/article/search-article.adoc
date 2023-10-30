@@ -1,0 +1,11 @@
+[[search-article]]
+=== 뉴스 기사 조회
+
+==== HTTP Request
+include::{snippets}/search-article/http-request.adoc[]
+include::{snippets}/search-article/request-parameters.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-article/http-response.adoc[]
+include::{snippets}/search-article/response-fields.adoc[]

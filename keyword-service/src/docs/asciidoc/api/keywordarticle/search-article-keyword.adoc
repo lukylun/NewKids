@@ -1,0 +1,10 @@
+[[search-article-keyword]]
+=== 뉴스 기사 키워드 조회
+
+==== HTTP Request
+include::{snippets}/search-article-keyword/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-article-keyword/http-response.adoc[]
+include::{snippets}/search-article-keyword/response-fields.adoc[]

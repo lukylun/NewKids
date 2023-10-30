@@ -1,0 +1,11 @@
+[[search-word]]
+=== 단어 조회
+
+==== HTTP Request
+include::{snippets}/search-word/http-request.adoc[]
+include::{snippets}/search-word/request-parameters.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-word/http-response.adoc[]
+include::{snippets}/search-word/response-fields.adoc[]

@@ -1,0 +1,10 @@
+[[search-account]]
+=== 개인 정보 조회
+
+==== HTTP Request
+include::{snippets}/search-account/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-account/http-response.adoc[]
+include::{snippets}/search-account/response-fields.adoc[]

@@ -1,0 +1,11 @@
+[[create-vocabulary]]
+=== 단어장 등록
+
+==== HTTP Request
+include::{snippets}/create-vocabulary/http-request.adoc[]
+include::{snippets}/create-vocabulary/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/create-vocabulary/http-response.adoc[]
+include::{snippets}/create-vocabulary/response-fields.adoc[]

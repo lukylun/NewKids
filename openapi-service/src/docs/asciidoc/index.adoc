@@ -1,0 +1,17 @@
+ifndef::snippets[]
+:snippets: ../../build/generated-snippets
+endif::[]
+= New Kids(openapi-service) REST API 문서
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+include::overview.adoc[]
+
+[[Open-API]]
+== Open API
+
+include::api/openapi/search-openapi.adoc[]

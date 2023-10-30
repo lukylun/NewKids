@@ -1,0 +1,10 @@
+[[start-weekly-quiz]]
+=== 주간 키워드 퀴즈 시작 등록
+
+==== HTTP Request
+include::{snippets}/start-weekly-quiz/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/start-weekly-quiz/http-response.adoc[]
+include::{snippets}/start-weekly-quiz/response-fields.adoc[]

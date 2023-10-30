@@ -1,0 +1,11 @@
+[[create-keyword]]
+=== 키워드 등록
+
+==== HTTP Request
+include::{snippets}/create-keyword/http-request.adoc[]
+include::{snippets}/create-keyword/request-fields.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/create-keyword/http-response.adoc[]
+include::{snippets}/create-keyword/response-fields.adoc[]

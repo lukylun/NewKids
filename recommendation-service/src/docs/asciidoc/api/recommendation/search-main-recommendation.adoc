@@ -1,0 +1,10 @@
+[[search-main-recommendation]]
+=== 메인 뉴스 기사 추천 조회
+
+==== HTTP Request
+include::{snippets}/search-main-recommendation/http-request.adoc[]
+
+
+==== HTTP Response
+include::{snippets}/search-main-recommendation/http-response.adoc[]
+include::{snippets}/search-main-recommendation/response-fields.adoc[]
